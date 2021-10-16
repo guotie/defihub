@@ -1,1 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search/>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>10-16 DeFi 周报 -- 去中心化永续合约一览</title><url>https://www.defihub.dev/post/2021/10/10-16-defi-perps-list-and-indexed-finance-attacked/</url><categories><category>Defi</category><category>永续合约</category></categories><tags><tag>dydx</tag><tag>perp.fi</tag><tag>Defi</tag><tag>MCDEX</tag><tag>永续合约</tag><tag>安全</tag></tags><content type="html"> 当前主流的去中心化永续合约 2021年，去中心化合约交易似乎成为了新的热点，这里总结了一些当前交易量比较大的永续合约列表，包括 Mcdex, dydx, perp.fi, 等去中心化永续合约, 包括市值，手续费，平台代币交易量，24小时平台交易量，二层网络扩展，使用的预言机，流动性提供类型，24小时手续费收入等，非常清晰
+https://docs.google.com/spreadsheets/d/1An5qiN09QqpZ_0uaW1_TDgizda2octg4ee8Hw1iMMhk/edit#gid=0
+此外，还有一篇文章更加深入的对比了当前主流的期货/永续合约的实现方式，以及下一步的实现计划：
+https://www.theblockbeats.com/news/26714
+本周安全事件 10月15日，indexed finance 发生安全事故，损失了大约 1600 万美金.
+原因概述:
+当 defi top5 pool 增加 token 时，对 pool value 的计算仅使用第一个 token, 这个bug被人利用。
+blocksec team 的详细分析： https://mp.weixin.qq.com/s/SLEzTWGGlnGxQM6uIlwQCQ
+这次攻击非常精彩，一个攻击交易的 gas 费高达600多万，另一个交易的 gas 高达1200多万, 我们可以在 etherscan 和 tenderly 上看一下，攻击过程还是非常复杂的:
+https://etherscan.io/tx/0x44aad3b853866468161735496a5d9cc961ce5aa872924c5d78673076b1cd95aa
+https://etherscan.io/tx/0xbde4521c5ac08d0033019993b0e7e1d29b1457e80e7743d318a3c27649ca4417
+https://dashboard.tenderly.co/tx/mainnet/0x44aad3b853866468161735496a5d9cc961ce5aa872924c5d78673076b1cd95aa
+https://dashboard.tenderly.co/tx/mainnet/0xbde4521c5ac08d0033019993b0e7e1d29b1457e80e7743d318a3c27649ca4417</content></entry><entry><title/><url>https://www.defihub.dev/about/</url><categories/><tags/><content type="html"> defihub defihub 是一个由 defi 爱好者发起的网站, 致力于普及 defi, 推广区块链, 使用区块链和 defi 构建一个更加公平, 更加透明, 更加高效, 更加美好的世界.</content></entry></search>
