@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>10-16 DeFi 周报 -- 去中心化永续合约一览</title><url>https://www.defihub.dev/post/2021/10/10-16-defi-perps-list-and-indexed-finance-attacked/</url><categories><category>Defi</category><category>永续合约</category></categories><tags><tag>dydx</tag><tag>perp.fi</tag><tag>Defi</tag><tag>MCDEX</tag><tag>永续合约</tag><tag>安全</tag></tags><content type="html"> 当前主流的去中心化永续合约 2021年，去中心化合约交易似乎成为了新的热点，这里总结了一些当前交易量比较大的永续合约列表，包括 Mcdex, dydx, perp.fi, 等去中心化永续合约, 包括市值，手续费，平台代币交易量，24小时平台交易量，二层网络扩展，使用的预言机，流动性提供类型，24小时手续费收入等，非常清晰
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>10-17 DeFiHub -- BTC ETF 终于通过了</title><url>https://www.defihub.dev/post/2021/10/10-16-defi-perps-list-and-indexed-finance-attacked/</url><categories><category>BTC</category></categories><tags><tag>BTC</tag><tag>ETF</tag><tag>BTC ETF</tag><tag>nansen</tag><tag>链上分析工具</tag></tags><content type="html"> BTC ETF 本周最大的事情，就是 BTC ETF 终于通过了美国SEC的审核. 对于加密货币而言，这是一个重大里程碑, 意味着 BTC 已经被主流机构接收，成为一种像黄金一样的投资品.
+去年，我就说过，BTC 迟早会成为各国央行的储备货币，今年，已经有几个小国家开始尝试BTC作为法定货币，预计2022年，会有更多的国家接收BTC作为法定货币，而这个趋势是潮流，是任何国家，任何组织都无法阻止的。
+链上分析工具 现在也涌现出很多链上分析工具，有面向开发者的，有面向大众的，有面向专业投资者的。
+etherscan 是最著名的分析工具，也是最基本的分析工具，也是任何公链的标配，当然，知名度也是最高的。
+昨天在介绍indexed finance 的安全事故时，我们提到了 tenderly, tenderly 是面向开发者服务的，今天我们看看另外一个面向专业投资者的工具: nansen.
+nansen 的官网：https://www.nansen.ai/
+nansen 的最低费用是 150刀/月，最高 3000刀/月, 看介绍也没觉得有什么特别之处，当然我也没有用过，有用过的大佬可以留言培训培训。
+当然，还有很多链上分析工具，例如:
+debank: https://www.debank.com defillama: https://defillama.com/ 与 debank 类似 dune分析: https://dune.xyz/ 非常灵活的分析工具，可以自己写 sql 语句来查询数据, 并将数据展示成各种图表。我觉得这个工具不仅可以用来分析链上数据，如果用来分析传统金融市场，应该会更加NB 都是非常好的工具。
+Secret Network Secret Network (https://scrt.network/) 是基于 Cosmos 的一条注重隐私的链。在 Secret Network 上所有数据都是加密的，想看到具体的交易数据就必须要有对应的 Viewing Key。
+将交易数据加密可以隐藏用户的代币余额，用户的交易记录等等。对于那些喜欢跟单大户的读者来说，Secret Network 断绝了一条财路。
+Secret Network 将自己比作以太坊智能合约 + 门罗币的默认隐私保护 + Cosmos 的扩展性和跨链。
+代码在此: https://github.com/SecretFoundation/SecretNetwork
+有兴趣的兄弟可以关注</content></entry><entry><title>10-16 DeFi 周报 -- 去中心化永续合约一览</title><url>https://www.defihub.dev/post/2021/10/10-16-defi-perps-list-and-indexed-finance-attacked/</url><categories><category>Defi</category><category>永续合约</category></categories><tags><tag>dydx</tag><tag>perp.fi</tag><tag>Defi</tag><tag>MCDEX</tag><tag>永续合约</tag><tag>安全</tag></tags><content type="html"> 当前主流的去中心化永续合约 2021年，去中心化合约交易似乎成为了新的热点，这里总结了一些当前交易量比较大的永续合约列表，包括 Mcdex, dydx, perp.fi, 等去中心化永续合约, 包括市值，手续费，平台代币交易量，24小时平台交易量，二层网络扩展，使用的预言机，流动性提供类型，24小时手续费收入等，非常清晰
 https://docs.google.com/spreadsheets/d/1An5qiN09QqpZ_0uaW1_TDgizda2octg4ee8Hw1iMMhk/edit#gid=0
 此外，还有一篇文章更加深入的对比了当前主流的期货/永续合约的实现方式，以及下一步的实现计划：
 https://www.theblockbeats.com/news/26714
