@@ -1,0 +1,424 @@
+<!doctype html><html lang=zh-cn dir=content/zh-cn>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta http-equiv=content-security-policy content="upgrade-insecure-requests">
+<title> 10-18 DeFiHub -- Convex 以及 比特币即将到来的 taproot 升级 - DeFi 爱好者 </title>
+<meta name=keywords content="Ethereum,Bsc,defi,solidity,swap,finance,blockchain,以太坊,wasm,NEAR,solana,智能合约,安全">
+<meta name=author content="DeFiHub">
+<meta property="og:title" content="10-18 DeFiHub -- Convex 以及 比特币即将到来的 taproot 升级">
+<meta property="og:site_name" content="DeFi 爱好者">
+<meta property="og:image" content="/img/author.jpg">
+<meta name=title content="10-18 DeFiHub -- Convex 以及 比特币即将到来的 taproot 升级 - DeFi 爱好者">
+<meta name=description content="当前主流的去中心化永续合约.">
+<link rel="shortcut icon" href=/img/favicon.ico>
+<link rel=apple-touch-icon href=/img/apple-touch-icon.png>
+<link rel=apple-touch-icon-precomposed href=/img/apple-touch-icon.png>
+<link href=//cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet type=text/css>
+<link href=//cdn.bootcdn.net/ajax/libs/imageviewer/0.1.0/viewer.min.css rel=stylesheet>
+<link href=/css/main.css rel=stylesheet type=text/css>
+<link href=/css/syntax.css rel=stylesheet type=text/css>
+<script type=text/javascript>var _hmt=_hmt||[];(function(){var a=document.createElement("script"),b;a.src="https://hm.baidu.com/hm.js?f2b01c7bf6bb06d444bc56ac04ba0d49",b=document.getElementsByTagName("script")[0],b.parentNode.insertBefore(a,b)})()</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=290130581"></script>
+<script type=text/javascript>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','290130581 ')</script>
+</head>
+<body itemscope itemtype=http://schema.org/WebPage lang=zh-hans>
+<div class="container one-collumn sidebar-position-left page-home">
+<div class=headband></div>
+<header id=header class=header itemscope itemtype=http://schema.org/WPHeader>
+<div class=header-inner> <div class=site-brand-container>
+<div class=site-nav-toggle>
+<div class=toggle role=button style=opacity:1;top:0>
+<span class=toggle-line></span>
+<span class=toggle-line></span>
+<span class=toggle-line></span>
+</div>
+</div>
+<div class=site-meta>
+<div class=multi-lang-switch>
+<i class="fa fa-fw fa-language" style=margin-right:5px></i>
+<a class=lang-link id=zh-cn href=#>中文</a>
+</div>
+<div class=custom-logo-site-title>
+<a href=/ class=brand rel=start>
+<span class=logo-line-before><i></i></span>
+<span class=site-title>DeFi 爱好者</span>
+<span class=logo-line-after><i></i></span>
+</a>
+</div>
+<p class=site-subtitle>DeFi 改变世界</p>
+</div>
+<div class=site-nav-right>
+<div class="toggle popup-trigger" style=opacity:1;top:0>
+<i class="fa fa-search fa-fw fa-lg"></i>
+</div>
+</div>
+</div>
+<nav class=site-nav>
+<ul id=menu class=menu>
+<li class=menu-item>
+<a href=/ rel=section>
+<i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页
+</a>
+</li>
+<li class=menu-item>
+<a href=/post rel=section>
+<i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档
+</a>
+</li>
+<li class=menu-item>
+<a href=/about/index.html rel=section>
+<i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于我
+</a>
+</li>
+<li class=menu-item>
+<a href=/404.html rel=section>
+<i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>公益404
+</a>
+</li>
+<li class="menu-item menu-item-search">
+<a href=javascript:; class=popup-trigger> <i class="menu-item-icon fa fa-search fa-fw"></i> <br> 搜索</a>
+</li>
+</ul>
+<div class=site-search>
+<div class="popup search-popup local-search-popup">
+<div class="local-search-header clearfix">
+<span class=search-icon><i class="fa fa-search"></i> </span>
+<span class=popup-btn-close><i class="fa fa-times-circle"></i></span>
+<div class=local-search-input-wrapper>
+<input autocomplete=off placeholder=搜索关键字... spellcheck=false type=text id=local-search-input autocapitalize=none autocorrect=off>
+</div>
+</div>
+<div id=local-search-result></div>
+</div>
+</div>
+</nav>
+</div>
+</header>
+<main id=main class=main>
+<div class=main-inner>
+<div class=content-wrap>
+<div id=content class=content>
+<section id=posts class=posts-expand>
+<article class="post post-type-normal" itemscope itemtype=http://schema.org/Article>
+<header class=post-header>
+<h1 class=post-title itemprop="name headline">
+<a class=post-title-link href=https://www.defihub.dev/post/2021/10/10-18-convex-and-btc-taproot-upgrade/ itemprop=url>
+10-18 DeFiHub -- Convex 以及 比特币即将到来的 taproot 升级
+</a>
+</h1>
+<div class=post-meta>
+<span class=post-time>
+<i class="fa fa-calendar-o fa-fw"></i>
+<span class=post-meta-item-text>时间：</span>
+<time itemprop=dateCreated datetime=2016-03-22T13:04:35+08:00 content="2021-10-18">
+2021-10-18
+</time>
+</span>
+<span class=post-category>
+&nbsp; | &nbsp;
+<i class="fa fa-folder-o fa-fw"></i>
+<span class=post-meta-item-text>分类：</span>
+<span itemprop=about itemscope itemtype=https://schema.org/Thing>
+<a href=/categories/defi itemprop=url rel=index style=text-decoration:underline>
+<span itemprop=name>Defi</span>
+</a>
+&nbsp;
+</span>
+<span itemprop=about itemscope itemtype=https://schema.org/Thing>
+<a href=/categories/btc itemprop=url rel=index style=text-decoration:underline>
+<span itemprop=name>BTC</span>
+</a>
+&nbsp;
+</span>
+</span>
+<span>
+|
+<i class="fa fa-file-word-o fa-fw"></i>
+<span class=post-meta-item-text>字数：</span>
+<span class=leancloud-world-count>1146 字</span>
+</span>
+<span>
+|
+<i class="fa fa-eye fa-fw"></i>
+<span class=post-meta-item-text>阅读：</span>
+<span class=leancloud-view-count>3分钟</span>
+</span>
+<span id=/post/2021/10/10-18-convex-and-btc-taproot-upgrade/ class=leancloud_visitors data-flag-title="10-18 DeFiHub -- Convex 以及 比特币即将到来的 taproot 升级">
+|
+<i class="fa fa-binoculars fa-fw"></i>
+<span class=post-meta-item-text>阅读次数：</span>
+<span class=leancloud-visitors-count></span>
+</span>
+</div>
+</header>
+<div class=post-body itemprop=articleBody>
+<h2 id=convex>Convex</h2>
+<p><code>Convex</code> 是一个基于 <code>Curve</code> 生态的 DeFi 项目。 简单来说， <code>Convex</code>是收益聚合器, 让用户可以在 <code>Curve</code> 平台上赚取更多收益. <code>Convex</code> 通过让 <code>Curve</code> 流动性提供者赚取交易费用的同时，提升 CRV 收益，且无需自己锁定 CRV。</p>
+<p><code>Convex</code> 的平台币为 <code>CVX</code>.</p>
+<p><code>Convex</code> 可以主要针对这两种人群来提升收益：</p>
+<ol>
+<li>对 <code>Curve</code> 平台币 <code>CRV</code> 持有者, Convex 有以下优势</li>
+</ol>
+<ul>
+<li>质押 CRV 中赚取 Convex 平台币;</li>
+<li>从Curve平台（3CRV）赚取交易费</li>
+<li>转换为 <code>cvxCRV</code> 质押挖矿, 并通过第三方市场兑换回 <code>CRV</code> (Convex 本身不提供 cvxCRV 到 CRV 的兑换 )</li>
+<li>获得 CVX 奖励</li>
+<li>领取空投</li>
+</ul>
+<ol start=2>
+<li>对流动性提供者, Convex 有以下优势:</li>
+</ol>
+<ul>
+<li>获得手续费， 同时获取更多 <code>CRV</code> 收益，且不需要锁定 CRX;</li>
+<li>获得 CVX 奖励</li>
+<li>无需存币手续费和提币手续费</li>
+<li>0手续费(例如SNX等)</li>
+</ul>
+<p><code>Convex</code> 项目官网: <a href=https://www.convexfinance.com/>https://www.convexfinance.com/</a></p>
+<p><code>Convex</code> 代码: <a href=https://github.com/convex-eth/platform>https://github.com/convex-eth/platform</a></p>
+<p><code>Convex</code> 在6月份进行了一次空投，在 eth 块号 12296676 (2021-04-23) 持有 <code>CVX</code> (convex 代币)的地址，都可以获得空投。</p>
+<p>** CVX的Token经济</p>
+<p>Convex 向 Curve LP 代币质押者收取 16% 的平台费用，其中 10% 以 CRV 的形式分配给 cvxCRV 质押者，5% 以 cvxCRV 的形式分配给 CVX 质押者，1% 以 CRV 的形式分配给harvest函数调用者（偿还调用合约函数的gas）。费用仅从 CRV 收入中扣除，不会从某些 Curve 池上支付的非 CRV 奖励中收取费用，也不会从支付给 cvxCRV 持有者的 Curve 协议费用中收取费用。当CVX质押者claim奖励时，CRV代币被锁定在Convex上，而cvxCRV被铸造并支付给用户。</p>
+<p>铸造的CVX数量与通过Convex赚取的CRV奖励数量成比例。每铸造100000个CVX，所发出的 CVX 与 CRV 的比率就会降低，CVX 的总供应量上限为 1 亿。最终，CVX 持有者将能够参与 Convex DAO 并对诸如奖励率之类的事情进行投票。</p>
+<p><img src="https://files.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MXUXhi90m2Jg6S04DpE%2F-MbbBa4dR0CIVYaBDq0j%2F-MbbBcDAVBmiSfR6VXde%2Fimage.png?alt=media&token=8bd337ae-bd98-48d8-aff7-b91bd3bab99c" alt="CVX supply"></p>
+<h2 id=btc-版本>btc 版本</h2>
+<p>上个月btc发布了22版本，吓我一跳。原来btc的版本号都是 <code>0.18</code>, <code>0.19</code>, <code>0.20</code>, <code>0.21</code> 这样的，这次突然一下子跳到了 <code>22</code> , 有点不大适应。不过看了release notes, 感觉也并没有很大的改变。</p>
+<h2 id=taproot升级>Taproot升级</h2>
+<p>最近，btc将迎来一次重大升级: Taproot升级. Taproot 将是继2017年比特币隔离见证之后最大的一次技术拓展. 总的来说，Taproot就是一个旨在提高比特币网络安全性、隐私性及灵活性的协议升级，此次升级主要包含三个升级包（BIPs），即 Schnorr 签名(BIP 340)、Taproot (BIP 341)和Tapscript(BIP 342)。</p>
+<p>其中， Schnorr 签名最为显著的优势就是允许签名聚合，即可以将参与交易的多方“聚合”为单个Schnorr签名。这不仅可以减少签名占用体积，而且因为新生成的单一签名无法查看原有的单个签名信息，从而减少信息暴露，提高私密性和安全性。</p>
+<p>BIP 342 Tapscript 是Schnorr和Taproot的补充升级，它添加和更新了一些操作码，来增强比特币的智能合约功能。</p>
+<p>这是不是意味着bitcoin 也要有智能合约了？我没有深入研究过，不过，我觉得 bitcoin 的智能合约可能还很遥远，受制于bitcoin的UTXO模型，已经比特币的区块时间，bitcoin的智能合约可能并没有那么乐观。</p>
+</div>
+<footer class=post-footer>
+<div class=post-tags>
+<a href=/tags/btc rel=tag title=btc>#btc#</a>
+<a href=/tags/convex rel=tag title=Convex>#Convex#</a>
+<a href=/tags/curve rel=tag title=Curve>#Curve#</a>
+<a href=/tags/cvx rel=tag title=CVX>#CVX#</a>
+<a href=/tags/taproot rel=tag title=Taproot>#Taproot#</a>
+<a href=/tags/schnorr rel=tag title=Schnorr>#Schnorr#</a>
+<a href=/tags/%e6%af%94%e7%89%b9%e5%b8%81 rel=tag title=比特币>#比特币#</a>
+</div>
+<div class=post-nav>
+<div class=article-copyright>
+<div class=article-copyright-info>
+<p>
+<span>声明：</span>10-18 DeFiHub -- Convex 以及 比特币即将到来的 taproot 升级
+</p>
+<p>
+<span>链接：</span>https://www.defihub.dev/post/2021/10/10-18-convex-and-btc-taproot-upgrade/
+</p>
+<p>
+<span>作者：</span>DeFiHub
+</p>
+<p>
+<span>声明： </span>本博客文章除特别声明外，均采用 <a href=https://creativecommons.org/licenses/by-nc-sa/3.0/ target=_blank style=text-decoration:underline>CC BY-NC-SA 3.0</a>许可协议，转载请注明出处！
+</p>
+</div>
+</div>
+<div class=clear></div>
+</div>
+<div class=reward-qr-info>
+<div>创作实属不易，如有帮助，那就打赏博主些许茶钱吧 ^_^</div>
+<button id=rewardButton disable=enable onclick="var qr=document.getElementById('QR');qr.style.display==='none'?qr.style.display='block':qr.style.display='none'">
+<span>赏</span>
+</button>
+<div id=QR style=display:none>
+<div id=wechat style=display:inline-block>
+<img id=wechat_qr src=/img/wechat-pay.png alt="WeChat Pay">
+<p>微信打赏</p>
+</div>
+<div id=alipay style=display:inline-block>
+<img id=alipay_qr src=/img/ali-pay.png alt=Alipay>
+<p>支付宝打赏</p>
+</div>
+</div>
+</div>
+<div class=post-nav>
+<div class="post-nav-next post-nav-item">
+</div>
+<div class="post-nav-prev post-nav-item">
+<a href=https://www.defihub.dev/post/2021/10/10-16-defi-perps-list-and-indexed-finance-attacked/ rel=prev title="10-17 DeFiHub -- BTC ETF 终于通过了">
+10-17 DeFiHub -- BTC ETF 终于通过了
+<i class="fa fa-chevron-right"></i>
+</a>
+</div>
+</div>
+<div id=wcomments></div>
+</footer>
+</article>
+</section>
+</div>
+</div>
+<div class=sidebar-toggle>
+<div class=sidebar-toggle-line-wrap>
+<span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+<span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+<span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+</div>
+</div>
+<aside id=sidebar class=sidebar>
+<div class=sidebar-inner>
+<section class="site-overview sidebar-panel sidebar-panel-active">
+<div class="site-author motion-element" itemprop=author itemscope itemtype=http://schema.org/Person>
+<img class=site-author-image itemprop=image src=/img/avatar.png alt=DeFiHub>
+<p class=site-author-name itemprop=name>DeFiHub</p>
+<p class="site-description motion-element" itemprop=description>
+千里之行 始于足下
+</p>
+</div>
+<nav class="site-state motion-element">
+<div class="site-state-item site-state-posts">
+<a href=/post/>
+<span class=site-state-item-count>3</span>
+<span class=site-state-item-name>日志</span>
+</a>
+</div>
+<div class="site-state-item site-state-categories">
+<a href=/categories/>
+<span class=site-state-item-count>3</span>
+<span class=site-state-item-name>分类</span>
+</a>
+</div>
+<div class="site-state-item site-state-tags">
+<a href=/tags/>
+<span class=site-state-item-count>17</span>
+<span class=site-state-item-name>标签</span>
+</a>
+</div>
+</nav>
+<div class="links-of-author motion-element">
+<span class=links-of-author-item>
+<a href=https://twitter.com/guotie target=_blank title=twitter>
+<i class="fa fa-fw fa-twitter"></i>
+twitter
+</a>
+</span>
+<span class=links-of-author-item>
+<a href=https://t.me/anydefi target=_blank title=telegram>
+<i class="fa fa-fw fa-telegram"></i>
+telegram
+</a>
+</span>
+<span class=links-of-author-item>
+<a href=mailto:guotie.9@gmail.com target=_blank title=email>
+<i class="fa fa-fw fa-envelope"></i>
+email
+</a>
+</span>
+<span class=links-of-author-item>
+<a href=https://medium.com/@guotie target=_blank title=medium>
+<i class="fa fa-fw fa-medium"></i>
+medium
+</a>
+</span>
+</div>
+<div class="links-of-blogroll motion-element links-of-blogroll-inline">
+<div class=links-of-blogroll-title>
+<i class="fa fa-fw fa-globe"></i>
+友情链接
+</div>
+<ul class=links-of-blogroll-list>
+<li class=links-of-blogroll-item>
+<a href=https://www.tiege.dev/ title=铁叔 target=_blank>铁叔</a>
+</li>
+</ul>
+</div>
+<div class="tagcloud-of-blogroll motion-element tagcloud-of-blogroll-inline">
+<div class=tagcloud-of-blogroll-title>
+<i class="fa fa-fw fa-tags"></i>
+标签云
+</div>
+<ul class=tagcloud-of-blogroll-list>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/btc>Btc</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/btc-etf>Btc etf</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/convex>Convex</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/curve>Curve</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/cvx>Cvx</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/defi>Defi</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/dydx>Dydx</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/etf>Etf</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/mcdex>Mcdex</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/nansen>Nansen</a>
+</li>
+</ul>
+</div>
+<div class="links-of-blogroll motion-element inline">
+<script type=text/javascript src="//rf.revolvermaps.com/0/0/6.js?i=5cqz568sgt5&m=7&c=e63100&cr1=ffffff&f=arial&l=0&bv=90&lx=-420&ly=420&hi=20&he=7&hc=a8ddff&rs=80" async></script>
+</div>
+</section>
+</div>
+</aside>
+</div>
+</main>
+<footer id=footer class=footer>
+<div class=footer-inner>
+<div class=copyright>
+<span class=copyright-year>
+&copy; 2010 - 2021
+</span>
+<span class=with-love><i class="fa fa-heart"></i></span>
+<span class=copyright-author>DeFi 爱好者</span>
+</div>
+<div class=powered-info>
+<span class=powered-by>
+Powered by - <a class=powered-link href=//gohugo.io target=_blank title=hugo>Hugo v0.88.1</a>
+</span>
+<span class=separator-line>/</span>
+<span class=theme-info>
+Theme by - <a class=powered-link href=//github.com/elkan1788/hugo-theme-next target=_blank> NexT
+</a>
+</span>
+</div>
+<div class=vistor-info>
+</div>
+<div class=license-info>
+<span class=storage-info>
+Storage by
+<a href=https://www.ucloud.cn/ style=font-weight:700 target=_blank>UCloud云存储</a>
+</span>
+<span class=separator-line>/</span>
+<span class=license-num>
+<a href target=_blank></a>
+</span>
+</div>
+</div>
+</footer>
+<div class=back-to-top>
+<i class="fa fa-arrow-up"></i>
+<span id=scrollpercent><span>0</span>%</span>
+</div>
+</div>
+<script type=text/javascript src=//cdn.bootcdn.net/ajax/libs/jquery/2.1.4/jquery.min.js></script>
+<script type=text/javascript src=/js/search.js></script>
+<script type=text/javascript src=/js/affix.js></script>
+<script type=text/javascript src=/js/scrollspy.js></script>
+<script type=text/javascript>function detectIE(){var a=window.navigator.userAgent,b=a.indexOf('MSIE '),c=a.indexOf('Trident/'),d=a.indexOf('Edge/');return b>0||c>0||d>0?-1:1}function getCntViewHeight(){var b=$('#content').height(),a=$(window).height(),c=b>a?b-a:$(document).height()-a;return c}function getScrollbarWidth(){var a=$('<div />').addClass('scrollbar-measure').prependTo('body'),b=a[0],c=b.offsetWidth-b.clientWidth;return a.remove(),c}function registerBackTop(){var b=50,a=$('.back-to-top');$(window).on('scroll',function(){var d,e,f,c,g;a.toggleClass('back-to-top-on',window.pageYOffset>b),d=$(window).scrollTop(),e=getCntViewHeight(),f=d/e,c=Math.round(f*100),g=c>100?100:c,$('#scrollpercent>span').html(g)}),a.on('click',function(){$("html,body").animate({scrollTop:0,screenLeft:0},800)})}function initScrollSpy(){var a='.post-toc',d=$(a),b='.active-current';d.on('activate.bs.scrollspy',function(){var b=$(a+' .active').last();c(),b.addClass('active-current')}).on('clear.bs.scrollspy',c),$('body').scrollspy({target:a});function c(){$(a+' '+b).removeClass(b.substring(1))}}function initAffix(){var a=$('.header-inner').height(),b=parseInt($('.main').css('padding-bottom'),10),c=a+10;$('.sidebar-inner').affix({offset:{top:c,bottom:b}}),$(document).on('affixed.bs.affix',function(){updateTOCHeight(document.body.clientHeight-100)})}function initTOCDimension(){var a,b;$(window).on('resize',function(){a&&clearTimeout(a),a=setTimeout(function(){var a=document.body.clientHeight-100;updateTOCHeight(a)},0)}),updateTOCHeight(document.body.clientHeight-100),b=getScrollbarWidth(),$('.post-toc').css('width','calc(100% + '+b+'px)')}function updateTOCHeight(a){a=a||'auto',$('.post-toc').css('max-height',a)}$(function(){var a=$('.header-inner').height()+10;$('#sidebar').css({'margin-top':a}).show(),$('.site-nav-toggle').on('click',function(){var a=$('.site-nav'),e=$('.toggle'),b='site-nav-on',f='toggle-close',c=a.hasClass(b),g=c?'slideUp':'slideDown',d=c?'removeClass':'addClass';a.stop()[g]('normal',function(){a[d](b),e[d](f)})}),registerBackTop(),initScrollSpy(),initAffix(),initTOCDimension(),$('.sidebar-nav-toc').click(function(){$(this).addClass('sidebar-nav-active'),$(this).next().removeClass('sidebar-nav-active'),$('.'+$(this).next().attr('data-target')).toggle(500),$('.'+$(this).attr('data-target')).toggle(500)}),$('.sidebar-nav-overview').click(function(){$(this).addClass('sidebar-nav-active'),$(this).prev().removeClass('sidebar-nav-active'),$('.'+$(this).prev().attr('data-target')).toggle(500),$('.'+$(this).attr('data-target')).toggle(500)})})</script>
+<script src=//cdn.bootcdn.net/ajax/libs/imageviewer/0.1.0/viewer.min.js></script>
+<script type=text/javascript>$(function(){$('.post-body').viewer()})</script>
+<script type=text/javascript>$(function(){detectIE()>0?$.getScript(document.location.protocol+'//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js',function(){new Waline({el:'#wcomments',visitor:!0,avatar:'wavatar',avatarCDN:'https://sdn.geekzu.org/avatar/',avatarForce:!1,wordLimit:'200',placeholder:' 欢迎留下您的宝贵建议，请填写您的昵称和邮箱便于后续交流. ^_^ ',requiredFields:['nick','mail'],serverURL:"https://waline-blog-api.vercel.app",lang:"zh-cn"})}):$('#wcomments').html('抱歉，Waline插件不支持IE或Edge，建议使用Chrome浏览器。')})</script>
+<script>(function(){var a=document.createElement('script'),c=window.location.protocol.split(':')[0],b;c==='https'?a.src='https://zz.bdstatic.com/linksubmit/push.js':a.src='http://push.zhanzhang.baidu.com/push.js',b=document.getElementsByTagName("script")[0],b.parentNode.insertBefore(a,b)})()</script>
+</body>
+</html>

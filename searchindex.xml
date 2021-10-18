@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>10-17 DeFiHub -- BTC ETF 终于通过了</title><url>https://www.defihub.dev/post/2021/10/10-16-defi-perps-list-and-indexed-finance-attacked/</url><categories><category>BTC</category></categories><tags><tag>BTC</tag><tag>ETF</tag><tag>BTC ETF</tag><tag>nansen</tag><tag>链上分析工具</tag></tags><content type="html"> BTC ETF 本周最大的事情，就是 BTC ETF 终于通过了美国SEC的审核. 对于加密货币而言，这是一个重大里程碑, 意味着 BTC 已经被主流机构接收，成为一种像黄金一样的投资品.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>10-18 DeFiHub -- Convex 以及 比特币即将到来的 taproot 升级</title><url>https://www.defihub.dev/post/2021/10/10-18-convex-and-btc-taproot-upgrade/</url><categories><category>Defi</category><category>BTC</category></categories><tags><tag>btc</tag><tag>Convex</tag><tag>Curve</tag><tag>CVX</tag><tag>Taproot</tag><tag>Schnorr</tag><tag>比特币</tag></tags><content type="html"> Convex Convex 是一个基于 Curve 生态的 DeFi 项目。 简单来说， Convex是收益聚合器, 让用户可以在 Curve 平台上赚取更多收益. Convex 通过让 Curve 流动性提供者赚取交易费用的同时，提升 CRV 收益，且无需自己锁定 CRV。
+Convex 的平台币为 CVX.
+Convex 可以主要针对这两种人群来提升收益：
+对 Curve 平台币 CRV 持有者, Convex 有以下优势 质押 CRV 中赚取 Convex 平台币; 从Curve平台（3CRV）赚取交易费 转换为 cvxCRV 质押挖矿, 并通过第三方市场兑换回 CRV (Convex 本身不提供 cvxCRV 到 CRV 的兑换 ) 获得 CVX 奖励 领取空投 对流动性提供者, Convex 有以下优势: 获得手续费， 同时获取更多 CRV 收益，且不需要锁定 CRX; 获得 CVX 奖励 无需存币手续费和提币手续费 0手续费(例如SNX等) Convex 项目官网: https://www.convexfinance.com/
+Convex 代码: https://github.com/convex-eth/platform
+Convex 在6月份进行了一次空投，在 eth 块号 12296676 (2021-04-23) 持有 CVX (convex 代币)的地址，都可以获得空投。
+** CVX的Token经济
+Convex 向 Curve LP 代币质押者收取 16% 的平台费用，其中 10% 以 CRV 的形式分配给 cvxCRV 质押者，5% 以 cvxCRV 的形式分配给 CVX 质押者，1% 以 CRV 的形式分配给harvest函数调用者（偿还调用合约函数的gas）。费用仅从 CRV 收入中扣除，不会从某些 Curve 池上支付的非 CRV 奖励中收取费用，也不会从支付给 cvxCRV 持有者的 Curve 协议费用中收取费用。当CVX质押者claim奖励时，CRV代币被锁定在Convex上，而cvxCRV被铸造并支付给用户。
+铸造的CVX数量与通过Convex赚取的CRV奖励数量成比例。每铸造100000个CVX，所发出的 CVX 与 CRV 的比率就会降低，CVX 的总供应量上限为 1 亿。最终，CVX 持有者将能够参与 Convex DAO 并对诸如奖励率之类的事情进行投票。
+btc 版本 上个月btc发布了22版本，吓我一跳。原来btc的版本号都是 0.18, 0.19, 0.20, 0.21 这样的，这次突然一下子跳到了 22 , 有点不大适应。不过看了release notes, 感觉也并没有很大的改变。
+Taproot升级 最近，btc将迎来一次重大升级: Taproot升级. Taproot 将是继2017年比特币隔离见证之后最大的一次技术拓展. 总的来说，Taproot就是一个旨在提高比特币网络安全性、隐私性及灵活性的协议升级，此次升级主要包含三个升级包（BIPs），即 Schnorr 签名(BIP 340)、Taproot (BIP 341)和Tapscript(BIP 342)。
+其中， Schnorr 签名最为显著的优势就是允许签名聚合，即可以将参与交易的多方“聚合”为单个Schnorr签名。这不仅可以减少签名占用体积，而且因为新生成的单一签名无法查看原有的单个签名信息，从而减少信息暴露，提高私密性和安全性。
+BIP 342 Tapscript 是Schnorr和Taproot的补充升级，它添加和更新了一些操作码，来增强比特币的智能合约功能。
+这是不是意味着bitcoin 也要有智能合约了？我没有深入研究过，不过，我觉得 bitcoin 的智能合约可能还很遥远，受制于bitcoin的UTXO模型，已经比特币的区块时间，bitcoin的智能合约可能并没有那么乐观。</content></entry><entry><title>10-17 DeFiHub -- BTC ETF 终于通过了</title><url>https://www.defihub.dev/post/2021/10/10-16-defi-perps-list-and-indexed-finance-attacked/</url><categories><category>BTC</category></categories><tags><tag>BTC</tag><tag>ETF</tag><tag>BTC ETF</tag><tag>nansen</tag><tag>链上分析工具</tag></tags><content type="html"> BTC ETF 本周最大的事情，就是 BTC ETF 终于通过了美国SEC的审核. 对于加密货币而言，这是一个重大里程碑, 意味着 BTC 已经被主流机构接收，成为一种像黄金一样的投资品.
 去年，我就说过，BTC 迟早会成为各国央行的储备货币，今年，已经有几个小国家开始尝试BTC作为法定货币，预计2022年，会有更多的国家接收BTC作为法定货币，而这个趋势是潮流，是任何国家，任何组织都无法阻止的。
 链上分析工具 现在也涌现出很多链上分析工具，有面向开发者的，有面向大众的，有面向专业投资者的。
 etherscan 是最著名的分析工具，也是最基本的分析工具，也是任何公链的标配，当然，知名度也是最高的。
