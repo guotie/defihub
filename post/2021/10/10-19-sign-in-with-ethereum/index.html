@@ -1,0 +1,469 @@
+<!doctype html><html lang=zh-cn dir=content/zh-cn>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta http-equiv=content-security-policy content="upgrade-insecure-requests">
+<title> 10-19 DeFiHub -- sign-in with Ethereum - DeFi 爱好者 </title>
+<meta name=keywords content="Ethereum,Bsc,defi,solidity,swap,finance,blockchain,以太坊,wasm,NEAR,solana,智能合约,安全">
+<meta name=author content="DeFiHub">
+<meta property="og:title" content="10-19 DeFiHub -- sign-in with Ethereum">
+<meta property="og:site_name" content="DeFi 爱好者">
+<meta property="og:image" content="/img/author.jpg">
+<meta name=title content="10-19 DeFiHub -- sign-in with Ethereum - DeFi 爱好者">
+<meta name=description content="EIP 最新提案，使用 ETH 来登录网站">
+<link rel="shortcut icon" href=/img/favicon.ico>
+<link rel=apple-touch-icon href=/img/apple-touch-icon.png>
+<link rel=apple-touch-icon-precomposed href=/img/apple-touch-icon.png>
+<link href=//cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet type=text/css>
+<link href=//cdn.bootcdn.net/ajax/libs/imageviewer/0.1.0/viewer.min.css rel=stylesheet>
+<link href=/css/main.css rel=stylesheet type=text/css>
+<link href=/css/syntax.css rel=stylesheet type=text/css>
+<script type=text/javascript>var _hmt=_hmt||[];(function(){var a=document.createElement("script"),b;a.src="https://hm.baidu.com/hm.js?f2b01c7bf6bb06d444bc56ac04ba0d49",b=document.getElementsByTagName("script")[0],b.parentNode.insertBefore(a,b)})()</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D8BBH64M35"></script>
+<script type=text/javascript>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-D8BBH64M35 ')</script>
+</head>
+<body itemscope itemtype=http://schema.org/WebPage lang=zh-hans>
+<div class="container one-collumn sidebar-position-left page-home">
+<div class=headband></div>
+<header id=header class=header itemscope itemtype=http://schema.org/WPHeader>
+<div class=header-inner> <div class=site-brand-container>
+<div class=site-nav-toggle>
+<div class=toggle role=button style=opacity:1;top:0>
+<span class=toggle-line></span>
+<span class=toggle-line></span>
+<span class=toggle-line></span>
+</div>
+</div>
+<div class=site-meta>
+<div class=multi-lang-switch>
+<i class="fa fa-fw fa-language" style=margin-right:5px></i>
+<a class=lang-link id=zh-cn href=#>中文</a>
+</div>
+<div class=custom-logo-site-title>
+<a href=/ class=brand rel=start>
+<span class=logo-line-before><i></i></span>
+<span class=site-title>DeFi 爱好者</span>
+<span class=logo-line-after><i></i></span>
+</a>
+</div>
+<p class=site-subtitle>DeFi 改变世界</p>
+</div>
+<div class=site-nav-right>
+<div class="toggle popup-trigger" style=opacity:1;top:0>
+<i class="fa fa-search fa-fw fa-lg"></i>
+</div>
+</div>
+</div>
+<nav class=site-nav>
+<ul id=menu class=menu>
+<li class=menu-item>
+<a href=/ rel=section>
+<i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页
+</a>
+</li>
+<li class=menu-item>
+<a href=/post rel=section>
+<i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档
+</a>
+</li>
+<li class=menu-item>
+<a href=/about/index.html rel=section>
+<i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于我
+</a>
+</li>
+<li class=menu-item>
+<a href=/404.html rel=section>
+<i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>公益404
+</a>
+</li>
+<li class="menu-item menu-item-search">
+<a href=javascript:; class=popup-trigger> <i class="menu-item-icon fa fa-search fa-fw"></i> <br> 搜索</a>
+</li>
+</ul>
+<div class=site-search>
+<div class="popup search-popup local-search-popup">
+<div class="local-search-header clearfix">
+<span class=search-icon><i class="fa fa-search"></i> </span>
+<span class=popup-btn-close><i class="fa fa-times-circle"></i></span>
+<div class=local-search-input-wrapper>
+<input autocomplete=off placeholder=搜索关键字... spellcheck=false type=text id=local-search-input autocapitalize=none autocorrect=off>
+</div>
+</div>
+<div id=local-search-result></div>
+</div>
+</div>
+</nav>
+</div>
+</header>
+<main id=main class=main>
+<div class=main-inner>
+<div class=content-wrap>
+<div id=content class=content>
+<section id=posts class=posts-expand>
+<article class="post post-type-normal" itemscope itemtype=http://schema.org/Article>
+<header class=post-header>
+<h1 class=post-title itemprop="name headline">
+<a class=post-title-link href=https://www.defihub.dev/post/2021/10/10-19-sign-in-with-ethereum/ itemprop=url>
+10-19 DeFiHub -- sign-in with Ethereum
+</a>
+</h1>
+<div class=post-meta>
+<span class=post-time>
+<i class="fa fa-calendar-o fa-fw"></i>
+<span class=post-meta-item-text>时间：</span>
+<time itemprop=dateCreated datetime=2016-03-22T13:04:35+08:00 content="2021-10-19">
+2021-10-19
+</time>
+</span>
+<span class=post-category>
+&nbsp; | &nbsp;
+<i class="fa fa-folder-o fa-fw"></i>
+<span class=post-meta-item-text>分类：</span>
+<span itemprop=about itemscope itemtype=https://schema.org/Thing>
+<a href=/categories/defi itemprop=url rel=index style=text-decoration:underline>
+<span itemprop=name>Defi</span>
+</a>
+&nbsp;
+</span>
+<span itemprop=about itemscope itemtype=https://schema.org/Thing>
+<a href=/categories/eth itemprop=url rel=index style=text-decoration:underline>
+<span itemprop=name>ETH</span>
+</a>
+&nbsp;
+</span>
+</span>
+<span>
+|
+<i class="fa fa-file-word-o fa-fw"></i>
+<span class=post-meta-item-text>字数：</span>
+<span class=leancloud-world-count>1457 字</span>
+</span>
+<span>
+|
+<i class="fa fa-eye fa-fw"></i>
+<span class=post-meta-item-text>阅读：</span>
+<span class=leancloud-view-count>3分钟</span>
+</span>
+<span id=/post/2021/10/10-19-sign-in-with-ethereum/ class=leancloud_visitors data-flag-title="10-19 DeFiHub -- sign-in with Ethereum">
+|
+<i class="fa fa-binoculars fa-fw"></i>
+<span class=post-meta-item-text>阅读次数：</span>
+<span class=leancloud-visitors-count></span>
+</span>
+</div>
+</header>
+<div class=post-body itemprop=articleBody>
+<h2 id=eip-4361>EIP 4361</h2>
+<p>关于规范使用 Ethereum 登录，最近 ETH 社区提出了一个标准提案(eip): eip-4361, <a href=https://github.com/ethereum/EIPs/blob/9a9c5d0abdaf5ce5c5dd6dc88c6d8db1b130e95b/EIPS/eip-4361.md>https://github.com/ethereum/EIPs/blob/9a9c5d0abdaf5ce5c5dd6dc88c6d8db1b130e95b/EIPS/eip-4361.md</a></p>
+<p>这个提案还没有通过，社区还正在讨论。</p>
+<p>Logo 如下:</p>
+<div style=overflow-x:auto;width:360px;margin:auto;text-align:center><svg class="w-64 h-64 mx-16" viewBox="0 0 157 157" fill="none" xmlns="http://www.w3.org/2000/svg"><mask id="path-1-inside-1" fill="#fff"><path d="M96.6241 71.902C96.4524 71.9022 96.2838 71.8559 96.1363 71.768 95.9888 71.6802 95.8678 71.554 95.7863 71.403L88.0365 57.672C87.9608 57.5617 87.909 57.4368 87.8841 57.3055 87.8592 57.1741 87.8619 57.039 87.892 56.9087 87.9222 56.7784 87.9791 56.6558 88.0591 56.5486S88.2405 56.352 88.3569 56.286C88.4734 56.22 88.6022 56.1789 88.7354 56.1652 88.8685 56.1516 89.0031 56.1658 89.1304 56.2068 89.2578 56.2478 89.3753 56.3147 89.4754 56.4035 89.5755 56.4922 89.6562 56.6007 89.7121 56.7222L97.4619 70.4693C97.5245 70.579 97.5645 70.7 97.5797 70.8253 97.5949 70.9505 97.585 71.0776 97.5505 71.199 97.516 71.3204 97.4576 71.4337 97.3788 71.5323 97.2999 71.6309 97.2022 71.7128 97.0913 71.7732 96.9521 71.8621 96.7893 71.907 96.6241 71.902zM111.076 87.9188 98.4126 109.022C98.3844 109.082 98.3462 109.137 98.2997 109.183l-19.0603 30.36C79.1527 139.683 79.0317 139.798 78.8879 139.878 78.7441 139.958 78.5823 140 78.4177 140 78.2531 140 78.0913 139.958 77.9475 139.878 77.8037 139.798 77.6827 139.683 77.596 139.543L45.4528 88.3374C43.8837 85.846 43.0352 82.9695 43.0011 80.0262 42.9669 77.0829 43.7486 74.1875 45.2594 71.6605L77.5799 17.477C77.6772 17.3113 77.8217 17.1784 77.995 17.0952 78.1683 17.0121 78.3625 16.9824 78.5528 17.0101 78.743 17.0377 78.9207 17.1214 79.0631 17.2504 79.2055 17.3795 79.3061 17.548 79.3522 17.7345L111.254 71.6122C112.733 74.082 113.499 76.9126 113.468 79.7905 113.437 82.6685 112.609 85.4817 111.076 87.9188zM85.2491 89.0135l5.9614-9.7872C91.6082 78.578 91.828 77.8364 91.8478 77.0763 91.8676 76.3162 91.6867 75.5642 91.3233 74.8961L79.3844 54.8549v6.1653L86.4736 73.3991C86.9731 74.2704 87.2319 75.2588 87.2234 76.2629 87.2149 77.267 86.9394 78.2508 86.4253 79.1136l-1.6112 2.6883C84.7284 81.9469 84.6057 82.0666 84.4585 82.1486 84.3112 82.2306 84.1448 82.2721 83.9763 82.2687 83.806 82.274 83.638 82.2292 83.4929 82.1399 83.3826 82.0768 83.286 81.9921 83.209 81.891 83.132 81.79 83.076 81.6745 83.0445 81.5514 83.0129 81.4283 83.0064 81.3001 83.0253 81.1745 83.0442 81.0489 83.0882 80.9283 83.1546 80.8199l1.6112-2.7043C85.1033 77.5493 85.2842 76.9036 85.2899 76.2446 85.2956 75.5855 85.1258 74.9368 84.798 74.3649l-5.4136-9.4491V74.6064C79.3786 78.4482 80.5479 82.2 82.7357 85.3594l2.5134 3.6541zM96.3824 108.604 81.1406 86.454C78.73 82.9732 77.4426 78.8391 77.451 74.6064V21.4852L46.919 72.6586C45.5903 74.878 44.9035 77.422 44.9348 80.0079 44.9661 82.5938 45.7143 85.1204 47.0962 87.3071L78.4177 137.209l17.9647-28.605zM109.594 72.6103 79.3844 21.5818v5.3926L98.1064 59.99C98.1699 60.0999 98.2112 60.2212 98.2278 60.3471 98.2444 60.4729 98.2359 60.6008 98.203 60.7234S98.1133 60.9609 98.0359 61.0615C97.9585 61.1622 97.862 61.2466 97.7519 61.31 97.6031 61.3901 97.4376 61.4342 97.2686 61.4387 97.0988 61.4389 96.932 61.3943 96.7849 61.3095 96.6378 61.2247 96.5157 61.1027 96.4308 60.9558L79.3844 30.886v7.8877L87.827 53.1969C87.8934 53.3053 87.9374 53.4258 87.9563 53.5515 87.9752 53.6771 87.9687 53.8053 87.9372 53.9284 87.9056 54.0514 87.8496 54.167 87.7726 54.268 87.6956 54.3691 87.599 54.4538 87.4887 54.5169 87.3429 54.6045 87.1754 54.6491 87.0053 54.6457 86.8368 54.6491 86.6704 54.6076 86.5232 54.5256 86.3759 54.4436 86.2532 54.3239 86.1675 54.1789L79.3844 42.5888v8.5316L92.9828 73.9142V73.9464C93.5107 74.9168 93.7751 76.0085 93.7496 77.1127 93.7242 78.2169 93.4098 79.2952 92.8378 80.2404L86.4092 90.7681 89.2932 94.9373 98.1547 80.498C98.7025 79.5965 99.492 77.8419 98.5253 76.2L97.7358 74.8317C97.6723 74.7218 97.631 74.6005 97.6145 74.4746 97.5979 74.3488 97.6063 74.2209 97.6392 74.0983 97.6721 73.9757 97.7289 73.8608 97.8063 73.7602 97.8837 73.6595 97.9802 73.5751 98.0903 73.5117 98.3134 73.3878 98.5761 73.3554 98.8227 73.4215 99.0693 73.4876 99.2804 73.647 99.4115 73.8659L100.201 75.218C101.264 77.0692 101.135 79.3551 99.7981 81.5121L90.4855 96.6758 93.4501 100.974 104.696 82.8321C105.339 81.7901 105.688 80.5943 105.708 79.3705 105.728 78.1468 105.417 76.9403 104.809 75.878L98.5253 64.9641C98.3971 64.7421 98.3624 64.4783 98.4289 64.2307 98.4954 63.9832 98.6576 63.7721 98.8798 63.6441 99.102 63.516 99.366 63.4813 99.6138 63.5478 99.8615 63.6142 100.073 63.7762 100.201 63.9982L106.485 74.9122C107.265 76.2772 107.664 77.8271 107.638 79.3991 107.613 80.9711 107.164 82.5072 106.34 83.8462L94.6423 102.712 97.4619 106.817 109.385 86.9047C109.401 86.9047 109.401 86.9047 109.401 86.8886 110.749 84.7585 111.481 82.2969 111.515 79.7767 111.549 77.2565 110.884 74.7761 109.594 72.6103z"/></mask><path d="M96.6241 71.902C96.4524 71.9022 96.2838 71.8559 96.1363 71.768 95.9888 71.6802 95.8678 71.554 95.7863 71.403L88.0365 57.672C87.9608 57.5617 87.909 57.4368 87.8841 57.3055 87.8592 57.1741 87.8619 57.039 87.892 56.9087 87.9222 56.7784 87.9791 56.6558 88.0591 56.5486S88.2405 56.352 88.3569 56.286C88.4734 56.22 88.6022 56.1789 88.7354 56.1652 88.8685 56.1516 89.0031 56.1658 89.1304 56.2068 89.2578 56.2478 89.3753 56.3147 89.4754 56.4035 89.5755 56.4922 89.6562 56.6007 89.7121 56.7222L97.4619 70.4693C97.5245 70.579 97.5645 70.7 97.5797 70.8253 97.5949 70.9505 97.585 71.0776 97.5505 71.199 97.516 71.3204 97.4576 71.4337 97.3788 71.5323 97.2999 71.6309 97.2022 71.7128 97.0913 71.7732 96.9521 71.8621 96.7893 71.907 96.6241 71.902zM111.076 87.9188 98.4126 109.022C98.3844 109.082 98.3462 109.137 98.2997 109.183l-19.0603 30.36C79.1527 139.683 79.0317 139.798 78.8879 139.878 78.7441 139.958 78.5823 140 78.4177 140 78.2531 140 78.0913 139.958 77.9475 139.878 77.8037 139.798 77.6827 139.683 77.596 139.543L45.4528 88.3374C43.8837 85.846 43.0352 82.9695 43.0011 80.0262 42.9669 77.0829 43.7486 74.1875 45.2594 71.6605L77.5799 17.477C77.6772 17.3113 77.8217 17.1784 77.995 17.0952 78.1683 17.0121 78.3625 16.9824 78.5528 17.0101 78.743 17.0377 78.9207 17.1214 79.0631 17.2504 79.2055 17.3795 79.3061 17.548 79.3522 17.7345L111.254 71.6122C112.733 74.082 113.499 76.9126 113.468 79.7905 113.437 82.6685 112.609 85.4817 111.076 87.9188zM85.2491 89.0135l5.9614-9.7872C91.6082 78.578 91.828 77.8364 91.8478 77.0763 91.8676 76.3162 91.6867 75.5642 91.3233 74.8961L79.3844 54.8549v6.1653L86.4736 73.3991C86.9731 74.2704 87.2319 75.2588 87.2234 76.2629 87.2149 77.267 86.9394 78.2508 86.4253 79.1136l-1.6112 2.6883C84.7284 81.9469 84.6057 82.0666 84.4585 82.1486 84.3112 82.2306 84.1448 82.2721 83.9763 82.2687 83.806 82.274 83.638 82.2292 83.4929 82.1399 83.3826 82.0768 83.286 81.9921 83.209 81.891 83.132 81.79 83.076 81.6745 83.0445 81.5514 83.0129 81.4283 83.0064 81.3001 83.0253 81.1745 83.0442 81.0489 83.0882 80.9283 83.1546 80.8199l1.6112-2.7043C85.1033 77.5493 85.2842 76.9036 85.2899 76.2446 85.2956 75.5855 85.1258 74.9368 84.798 74.3649l-5.4136-9.4491V74.6064C79.3786 78.4482 80.5479 82.2 82.7357 85.3594l2.5134 3.6541zM96.3824 108.604 81.1406 86.454C78.73 82.9732 77.4426 78.8391 77.451 74.6064V21.4852L46.919 72.6586C45.5903 74.878 44.9035 77.422 44.9348 80.0079 44.9661 82.5938 45.7143 85.1204 47.0962 87.3071L78.4177 137.209l17.9647-28.605zM109.594 72.6103 79.3844 21.5818v5.3926L98.1064 59.99C98.1699 60.0999 98.2112 60.2212 98.2278 60.3471 98.2444 60.4729 98.2359 60.6008 98.203 60.7234S98.1133 60.9609 98.0359 61.0615C97.9585 61.1622 97.862 61.2466 97.7519 61.31 97.6031 61.3901 97.4376 61.4342 97.2686 61.4387 97.0988 61.4389 96.932 61.3943 96.7849 61.3095 96.6378 61.2247 96.5157 61.1027 96.4308 60.9558L79.3844 30.886v7.8877L87.827 53.1969C87.8934 53.3053 87.9374 53.4258 87.9563 53.5515 87.9752 53.6771 87.9687 53.8053 87.9372 53.9284 87.9056 54.0514 87.8496 54.167 87.7726 54.268 87.6956 54.3691 87.599 54.4538 87.4887 54.5169 87.3429 54.6045 87.1754 54.6491 87.0053 54.6457 86.8368 54.6491 86.6704 54.6076 86.5232 54.5256 86.3759 54.4436 86.2532 54.3239 86.1675 54.1789L79.3844 42.5888v8.5316L92.9828 73.9142V73.9464C93.5107 74.9168 93.7751 76.0085 93.7496 77.1127 93.7242 78.2169 93.4098 79.2952 92.8378 80.2404L86.4092 90.7681 89.2932 94.9373 98.1547 80.498C98.7025 79.5965 99.492 77.8419 98.5253 76.2L97.7358 74.8317C97.6723 74.7218 97.631 74.6005 97.6145 74.4746 97.5979 74.3488 97.6063 74.2209 97.6392 74.0983 97.6721 73.9757 97.7289 73.8608 97.8063 73.7602 97.8837 73.6595 97.9802 73.5751 98.0903 73.5117 98.3134 73.3878 98.5761 73.3554 98.8227 73.4215 99.0693 73.4876 99.2804 73.647 99.4115 73.8659L100.201 75.218C101.264 77.0692 101.135 79.3551 99.7981 81.5121L90.4855 96.6758 93.4501 100.974 104.696 82.8321C105.339 81.7901 105.688 80.5943 105.708 79.3705 105.728 78.1468 105.417 76.9403 104.809 75.878L98.5253 64.9641C98.3971 64.7421 98.3624 64.4783 98.4289 64.2307 98.4954 63.9832 98.6576 63.7721 98.8798 63.6441 99.102 63.516 99.366 63.4813 99.6138 63.5478 99.8615 63.6142 100.073 63.7762 100.201 63.9982L106.485 74.9122C107.265 76.2772 107.664 77.8271 107.638 79.3991 107.613 80.9711 107.164 82.5072 106.34 83.8462L94.6423 102.712 97.4619 106.817 109.385 86.9047C109.401 86.9047 109.401 86.9047 109.401 86.8886 110.749 84.7585 111.481 82.2969 111.515 79.7767 111.549 77.2565 110.884 74.7761 109.594 72.6103z" fill="#fff" stroke="url(#paint0_linear)" stroke-width="2.03957" mask="url(#path-1-inside-1)"/><rect x="1" y="1" width="155" height="155" rx="29" stroke="url(#paint1_linear)" stroke-width="2"/><defs><linearGradient id="paint0_linear" x1="71.9778" y1="35.8265" x2="43.5692" y2="162.327" gradientUnits="userSpaceOnUse"><stop offset=".111821" stop-color="#04d2ca"/><stop offset=".816463" stop-color="#6a49e4"/></linearGradient><linearGradient id="paint1_linear" x1="64.5607" y1="24.0306" x2="43.0936" y2="190.881" gradientUnits="userSpaceOnUse"><stop offset=".111821" stop-color="#04d2ca"/><stop offset=".816463" stop-color="#6a49e4"/></linearGradient></defs></svg>
+</div>
+<p>这个协议的内容和 EIP-712 有点类似，不过，是针对网站登录的。 随着<code>NFT</code> 走入大众的视线，作为全球 <code>NFT</code> 最大的销售平台， <code>opensea</code> 就是使用 Ethereum 登录。也许这不是 opensea 的首创，但绝对是使用 Ethereum 登录的最大网站，当然，各种 dapp 不包括在内。也正因为如此，这个 eip 中的例子就是 <code>opensea</code></p>
+<h2 id=eip-协议内容>eip 协议内容</h2>
+<p>登录流程如下：</p>
+<p>871 / 5000</p>
+<ol>
+<li>钱包向用户呈现结构化的明文消息或等效接口，用于使用 EIP-191 签名方案（以 \x19Ethereum Signed Message 为前缀的字符串：\n&lt;消息长度>）进行签名。 消息必须包含以太坊地址、消息版本、用于范围的 uri、服务器可接受的随机数和发布时间戳。</li>
+<li>然后前端将签名提交给服务器，服务器检查签名的有效性和消息内容。</li>
+<li>附加字段，包括到期时间、在xxx时间之前、请求 ID、链 ID 和资源，可以合并作为会话认证的一部分。</li>
+<li>服务器可以进一步获取与以太坊地址相关的数据，例如从以太坊区块链（例如，ENS、账户余额、ERC-20/ERC-721/ERC-1155 资产所有权）或其他一些比较敏感的内容(可能无法通过用户许可)。</li>
+</ol>
+<p>举个例子如下:</p>
+<div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>service.org wants you to sign in with your Ethereum account:
+0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+
+I accept the ServiceOrg Terms of Service: https://service.org/tos
+
+URI: https://service.org/login
+Version: 1
+Chain ID: 1
+Nonce: 328917
+Issued At: 2021-09-30T16:25:24Z
+Resources:
+- ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/
+- https://example.com/my-web2-claim.json
+</code></pre></div><h3 id=使用以太坊账户签名和验证>使用以太坊账户签名和验证</h3>
+<ul>
+<li>对于外部拥有账户 (EOA)，必须使用 EIP-191 中指定的验证方法。</li>
+<li>对于合约账户
+<ul>
+<li>必须使用 EIP-1271 中指定的验证方法。</li>
+<li>在执行 EIP-1271 签名验证时，执行验证的合约必须从指定的 chain-id 解析。</li>
+<li>实现者应该考虑到 EIP-1271 实现不需要是纯函数，并且可以根据区块链状态为相同的输入返回不同的结果。这会影响安全模型和会话验证规则。例如，当影响结果的状态改变时，启用了 EIP-1271 签名的服务可能依赖 webhook 来接收通知。当它收到通知时，它会使任何匹配的会话无效。</li>
+</ul>
+</li>
+</ul>
+<h3 id=解析以太坊名称服务-ens-数据>解析以太坊名称服务 (ENS) 数据</h3>
+<ul>
+<li>服务器或钱包可以另外执行 ENS 数据的解析，因为这可以通过显示与地址相关的人性化信息来改善用户体验。可解析的 ENS 数据包括：
+<ul>
+<li>首要 ENS 名称。</li>
+<li>ENS 头像。</li>
+<li>文档中指定的任何其他可解析资源。</li>
+</ul>
+</li>
+<li>如果对 ENS 数据进行解析，实施者应该采取预防措施来保护用户隐私和同意，因为他们的地址可以作为解析过程的一部分转发给第三方服务。</li>
+</ul>
+<h3 id=服务器端依赖方实施者指南>服务器端（依赖方）实施者指南</h3>
+<p><strong>验证签名消息</strong></p>
+<ul>
+<li>必须检查消息是否符合上述 ABNF，在解析后根据预期的术语值进行检查，并且必须验证其签名。</li>
+</ul>
+<p><strong>创建会话</strong></p>
+<ul>
+<li>会话必须绑定到地址，而不是绑定到可能改变的进一步解析的资源。</li>
+</ul>
+<p><strong>解释和解析资源</strong></p>
+<ul>
+<li>列出的资源必须是 RFC 3986 URI，但它们的解释超出了本规范的范围。</li>
+<li>实现者应该确保 URI 在以纯文本形式表示时是人性化的。</li>
+</ul>
+<h3 id=钱包实施者指南>钱包实施者指南</h3>
+<p><strong>验证消息</strong></p>
+<ul>
+<li>必须检查完整的消息是否符合上述 ABNF。</li>
+</ul>
+<p><strong>验证域绑定</strong></p>
+<ul>
+<li>钱包实施者必须在处理签名请求时通过匹配域术语来防止网络钓鱼攻击。例如，在处理以“service.org 要求您登录&mldr;”开头的消息时，钱包会检查该请求是否确实来自 service.org。</li>
+<li>域应该从受信任的数据源读取，例如浏览器窗口或通过 WalletConnect (EIP-1328) 会话与签名消息内容进行比较。</li>
+</ul>
+<h3 id=使用以太坊接口创建登录>使用以太坊接口创建登录</h3>
+<ul>
+<li>钱包实施者必须在默认情况下和签名之前向用户显示来自 Sign-In with Ethereum 签名请求的以下条款（如果存在）：域、地址、声明和资源。其他现有条款也必须在默认情况下或通过扩展界面签署之前提供给用户。</li>
+<li>向用户显示纯文本消息的钱包实施者应该要求用户在签名之前滚动到文本区域的底部。</li>
+<li>钱包实现者可以通过将 ABNF 术语解析为在界面中使用的数据元素来构建自定义的 Sign-In With Ethereum 用户界面。上面的显示规则仍然适用于自定义界面。</li>
+</ul>
+<h3 id=支持国际化i18n>支持国际化（i18n）</h3>
+<p>在成功将消息解析为 ABNF 术语后，在UX时翻译并显示给用户。</p>
+<p>对该提案的进一步讨论： <a href=https://ethereum-magicians.org/t/eip-4361-sign-in-with-ethereum/7263>https://ethereum-magicians.org/t/eip-4361-sign-in-with-ethereum/7263</a> 有兴趣的可以关注</p>
+</div>
+<footer class=post-footer>
+<div class=post-tags>
+<a href=/tags/eth rel=tag title=ETH>#ETH#</a>
+<a href=/tags/eth-2.0 rel=tag title="ETH 2.0">#ETH 2.0#</a>
+<a href=/tags/eip rel=tag title=EIP>#EIP#</a>
+<a href=/tags/nft rel=tag title=NFT>#NFT#</a>
+</div>
+<div class=post-nav>
+<div class=article-copyright>
+<div class=article-copyright-info>
+<p>
+<span>声明：</span>10-19 DeFiHub -- sign-in with Ethereum
+</p>
+<p>
+<span>链接：</span>https://www.defihub.dev/post/2021/10/10-19-sign-in-with-ethereum/
+</p>
+<p>
+<span>作者：</span>DeFiHub
+</p>
+<p>
+<span>声明： </span>本博客文章除特别声明外，均采用 <a href=https://creativecommons.org/licenses/by-nc-sa/3.0/ target=_blank style=text-decoration:underline>CC BY-NC-SA 3.0</a>许可协议，转载请注明出处！
+</p>
+</div>
+</div>
+<div class=clear></div>
+</div>
+<div class=reward-qr-info>
+<div>创作实属不易，如有帮助，那就打赏博主些许茶钱吧 ^_^</div>
+<button id=rewardButton disable=enable onclick="var qr=document.getElementById('QR');qr.style.display==='none'?qr.style.display='block':qr.style.display='none'">
+<span>赏</span>
+</button>
+<div id=QR style=display:none>
+<div id=wechat style=display:inline-block>
+<img id=wechat_qr src=/img/wechat-pay.png alt="WeChat Pay">
+<p>微信打赏</p>
+</div>
+<div id=alipay style=display:inline-block>
+<img id=alipay_qr src=/img/ali-pay.png alt=Alipay>
+<p>支付宝打赏</p>
+</div>
+</div>
+</div>
+<div class=post-nav>
+<div class="post-nav-next post-nav-item">
+</div>
+<div class="post-nav-prev post-nav-item">
+<a href=https://www.defihub.dev/post/2021/10/10-19-eth-2-and-the-dao/ rel=prev title="10-19 DeFiHub -- ETH 2.0 and the DAO">
+10-19 DeFiHub -- ETH 2.0 and the DAO
+<i class="fa fa-chevron-right"></i>
+</a>
+</div>
+</div>
+<div id=wcomments></div>
+</footer>
+</article>
+</section>
+</div>
+</div>
+<div class=sidebar-toggle>
+<div class=sidebar-toggle-line-wrap>
+<span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+<span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+<span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+</div>
+</div>
+<aside id=sidebar class=sidebar>
+<div class=sidebar-inner>
+<section class="site-overview sidebar-panel sidebar-panel-active">
+<div class="site-author motion-element" itemprop=author itemscope itemtype=http://schema.org/Person>
+<img class=site-author-image itemprop=image src=/img/avatar.png alt=DeFiHub>
+<p class=site-author-name itemprop=name>DeFiHub</p>
+<p class="site-description motion-element" itemprop=description>
+千里之行 始于足下
+</p>
+</div>
+<nav class="site-state motion-element">
+<div class="site-state-item site-state-posts">
+<a href=/post/>
+<span class=site-state-item-count>5</span>
+<span class=site-state-item-name>日志</span>
+</a>
+</div>
+<div class="site-state-item site-state-categories">
+<a href=/categories/>
+<span class=site-state-item-count>4</span>
+<span class=site-state-item-name>分类</span>
+</a>
+</div>
+<div class="site-state-item site-state-tags">
+<a href=/tags/>
+<span class=site-state-item-count>26</span>
+<span class=site-state-item-name>标签</span>
+</a>
+</div>
+</nav>
+<div class="links-of-author motion-element">
+<span class=links-of-author-item>
+<a href=https://twitter.com/guotie target=_blank title=twitter>
+<i class="fa fa-fw fa-twitter"></i>
+twitter
+</a>
+</span>
+<span class=links-of-author-item>
+<a href=https://t.me/anydefi target=_blank title=telegram>
+<i class="fa fa-fw fa-telegram"></i>
+telegram
+</a>
+</span>
+<span class=links-of-author-item>
+<a href=mailto:guotie.9@gmail.com target=_blank title=email>
+<i class="fa fa-fw fa-envelope"></i>
+email
+</a>
+</span>
+<span class=links-of-author-item>
+<a href=https://medium.com/@guotie target=_blank title=medium>
+<i class="fa fa-fw fa-medium"></i>
+medium
+</a>
+</span>
+</div>
+<div class="links-of-blogroll motion-element links-of-blogroll-inline">
+<div class=links-of-blogroll-title>
+<i class="fa fa-fw fa-globe"></i>
+友情链接
+</div>
+<ul class=links-of-blogroll-list>
+<li class=links-of-blogroll-item>
+<a href=https://www.tiege.dev/ title=铁叔 target=_blank>铁叔</a>
+</li>
+</ul>
+</div>
+<div class="tagcloud-of-blogroll motion-element tagcloud-of-blogroll-inline">
+<div class=tagcloud-of-blogroll-title>
+<i class="fa fa-fw fa-tags"></i>
+标签云
+</div>
+<ul class=tagcloud-of-blogroll-list>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/btc>Btc</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/eth>Eth</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/eth-2.0>Eth 2.0</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/bnb>Bnb</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/bnb%E9%94%80%E6%AF%81>Bnb销毁</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/btc-etf>Btc etf</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/convex>Convex</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/curve>Curve</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/cvx>Cvx</a>
+</li>
+<li class=tagcloud-of-blogroll-item>
+<a href=/tags/dao>Dao</a>
+</li>
+</ul>
+</div>
+<div class="links-of-blogroll motion-element inline">
+<script type=text/javascript src="//rf.revolvermaps.com/0/0/6.js?i=5cqz568sgt5&m=7&c=e63100&cr1=ffffff&f=arial&l=0&bv=90&lx=-420&ly=420&hi=20&he=7&hc=a8ddff&rs=80" async></script>
+</div>
+</section>
+</div>
+</aside>
+</div>
+</main>
+<footer id=footer class=footer>
+<div class=footer-inner>
+<div class=copyright>
+<span class=copyright-year>
+&copy; 2010 - 2021
+</span>
+<span class=with-love><i class="fa fa-heart"></i></span>
+<span class=copyright-author>DeFi 爱好者</span>
+</div>
+<div class=powered-info>
+<span class=powered-by>
+Powered by - <a class=powered-link href=//gohugo.io target=_blank title=hugo>Hugo v0.88.1</a>
+</span>
+<span class=separator-line>/</span>
+<span class=theme-info>
+Theme by - <a class=powered-link href=//github.com/elkan1788/hugo-theme-next target=_blank> NexT
+</a>
+</span>
+</div>
+<div class=vistor-info>
+</div>
+<div class=license-info>
+<span class=storage-info>
+Storage by
+<a href=https://www.ucloud.cn/ style=font-weight:700 target=_blank>UCloud云存储</a>
+</span>
+<span class=separator-line>/</span>
+<span class=license-num>
+<a href target=_blank></a>
+</span>
+</div>
+</div>
+</footer>
+<div class=back-to-top>
+<i class="fa fa-arrow-up"></i>
+<span id=scrollpercent><span>0</span>%</span>
+</div>
+</div>
+<script type=text/javascript src=//cdn.bootcdn.net/ajax/libs/jquery/2.1.4/jquery.min.js></script>
+<script type=text/javascript src=/js/search.js></script>
+<script type=text/javascript src=/js/affix.js></script>
+<script type=text/javascript src=/js/scrollspy.js></script>
+<script type=text/javascript>function detectIE(){var a=window.navigator.userAgent,b=a.indexOf('MSIE '),c=a.indexOf('Trident/'),d=a.indexOf('Edge/');return b>0||c>0||d>0?-1:1}function getCntViewHeight(){var b=$('#content').height(),a=$(window).height(),c=b>a?b-a:$(document).height()-a;return c}function getScrollbarWidth(){var a=$('<div />').addClass('scrollbar-measure').prependTo('body'),b=a[0],c=b.offsetWidth-b.clientWidth;return a.remove(),c}function registerBackTop(){var b=50,a=$('.back-to-top');$(window).on('scroll',function(){var d,e,f,c,g;a.toggleClass('back-to-top-on',window.pageYOffset>b),d=$(window).scrollTop(),e=getCntViewHeight(),f=d/e,c=Math.round(f*100),g=c>100?100:c,$('#scrollpercent>span').html(g)}),a.on('click',function(){$("html,body").animate({scrollTop:0,screenLeft:0},800)})}function initScrollSpy(){var a='.post-toc',d=$(a),b='.active-current';d.on('activate.bs.scrollspy',function(){var b=$(a+' .active').last();c(),b.addClass('active-current')}).on('clear.bs.scrollspy',c),$('body').scrollspy({target:a});function c(){$(a+' '+b).removeClass(b.substring(1))}}function initAffix(){var a=$('.header-inner').height(),b=parseInt($('.main').css('padding-bottom'),10),c=a+10;$('.sidebar-inner').affix({offset:{top:c,bottom:b}}),$(document).on('affixed.bs.affix',function(){updateTOCHeight(document.body.clientHeight-100)})}function initTOCDimension(){var a,b;$(window).on('resize',function(){a&&clearTimeout(a),a=setTimeout(function(){var a=document.body.clientHeight-100;updateTOCHeight(a)},0)}),updateTOCHeight(document.body.clientHeight-100),b=getScrollbarWidth(),$('.post-toc').css('width','calc(100% + '+b+'px)')}function updateTOCHeight(a){a=a||'auto',$('.post-toc').css('max-height',a)}$(function(){var a=$('.header-inner').height()+10;$('#sidebar').css({'margin-top':a}).show(),$('.site-nav-toggle').on('click',function(){var a=$('.site-nav'),e=$('.toggle'),b='site-nav-on',f='toggle-close',c=a.hasClass(b),g=c?'slideUp':'slideDown',d=c?'removeClass':'addClass';a.stop()[g]('normal',function(){a[d](b),e[d](f)})}),registerBackTop(),initScrollSpy(),initAffix(),initTOCDimension(),$('.sidebar-nav-toc').click(function(){$(this).addClass('sidebar-nav-active'),$(this).next().removeClass('sidebar-nav-active'),$('.'+$(this).next().attr('data-target')).toggle(500),$('.'+$(this).attr('data-target')).toggle(500)}),$('.sidebar-nav-overview').click(function(){$(this).addClass('sidebar-nav-active'),$(this).prev().removeClass('sidebar-nav-active'),$('.'+$(this).prev().attr('data-target')).toggle(500),$('.'+$(this).attr('data-target')).toggle(500)})})</script>
+<script src=//cdn.bootcdn.net/ajax/libs/imageviewer/0.1.0/viewer.min.js></script>
+<script type=text/javascript>$(function(){$('.post-body').viewer()})</script>
+<script type=text/javascript>$(function(){detectIE()>0?$.getScript(document.location.protocol+'//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js',function(){new Waline({el:'#wcomments',visitor:!0,avatar:'wavatar',avatarCDN:'https://sdn.geekzu.org/avatar/',avatarForce:!1,wordLimit:'200',placeholder:' 欢迎留下您的宝贵建议，请填写您的昵称和邮箱便于后续交流. ^_^ ',requiredFields:['nick','mail'],serverURL:"https://waline-blog-api.vercel.app",lang:"zh-cn"})}):$('#wcomments').html('抱歉，Waline插件不支持IE或Edge，建议使用Chrome浏览器。')})</script>
+<script>(function(){var a=document.createElement('script'),c=window.location.protocol.split(':')[0],b;c==='https'?a.src='https://zz.bdstatic.com/linksubmit/push.js':a.src='http://push.zhanzhang.baidu.com/push.js',b=document.getElementsByTagName("script")[0],b.parentNode.insertBefore(a,b)})()</script>
+</body>
+</html>
