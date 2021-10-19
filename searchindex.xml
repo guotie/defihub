@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>10-19 DeFiHub -- sign-in with Ethereum</title><url>https://www.defihub.dev/post/2021/10/10-19-sign-in-with-ethereum/</url><categories><category>Defi</category><category>ETH</category></categories><tags><tag>ETH</tag><tag>ETH 2.0</tag><tag>EIP</tag><tag>NFT</tag></tags><content type="html"> EIP 4361 关于规范使用 Ethereum 登录，最近 ETH 社区提出了一个标准提案(eip): eip-4361, https://github.com/ethereum/EIPs/blob/9a9c5d0abdaf5ce5c5dd6dc88c6d8db1b130e95b/EIPS/eip-4361.md
 这个提案还没有通过，社区还正在讨论。
-Logo 如下:
+官网： https://login.xyz Logo 如下:
 这个协议的内容和 EIP-712 有点类似，不过，是针对网站登录的。 随着NFT 走入大众的视线，作为全球 NFT 最大的销售平台， opensea 就是使用 Ethereum 登录。也许这不是 opensea 的首创，但绝对是使用 Ethereum 登录的最大网站，当然，各种 dapp 不包括在内。也正因为如此，这个 eip 中的例子就是 opensea
 eip 协议内容 登录流程如下：
 871 / 5000
