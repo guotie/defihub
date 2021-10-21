@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>10-19 DeFiHub -- sign-in with Ethereum</title><url>https://www.defihub.dev/post/2021/10/10-19-sign-in-with-ethereum/</url><categories><category>Defi</category><category>ETH</category></categories><tags><tag>ETH</tag><tag>ETH 2.0</tag><tag>EIP</tag><tag>NFT</tag></tags><content type="html"> EIP 4361 关于规范使用 Ethereum 登录，最近 ETH 社区提出了一个标准提案(eip): eip-4361, https://github.com/ethereum/EIPs/blob/9a9c5d0abdaf5ce5c5dd6dc88c6d8db1b130e95b/EIPS/eip-4361.md
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>10-19 DeFiHub -- Arbitrum vs zkSync</title><url>https://www.defihub.dev/post/2021/10/10-19-eth-2-and-the-dao/</url><categories><category>ETH</category><category>L2</category></categories><tags><tag>Arbitrum</tag><tag>zkSync</tag><tag>L2</tag><tag>空投</tag><tag>Airdrop</tag><tag>FEI</tag><tag>NFT</tag></tags><content type="html"> Arbitrum 和 zkSync 都是 ETH L2 赛道上的当红炸子鸡,
+Arbitrum 以太坊扩容方案 Arbitrum 宣布其免许可代币桥接功能将在周五(10 月 22 日)对所有项目开放. 目前看来 Arbitrum 似乎是 ETH 上最有前途的 L2 网络，不过我觉得目前的手续费还是太高，1-2 美元的手续费也是很多人玩不起的。
+很多大项目都已经在 Arbitrum 发布了，包括 uniswap， compound，有这些项目的背书，加上 ETH 2 迟迟未到， Arbitrum 应该会有不错的前景。
+Arbitrum 还没发币，有兴趣的可以去玩玩，说不定有空投，像 uniswap 一样，哈哈哈
+zkSync zkSync 最近的 PR 也不少。昨天看到一篇文章，介绍了 zkSync 高深的数学基础。数学不会骗人，但是人会。我还记得当年被 ADA 的响尾蛇算法激动了半天，然而几年过去了， ADA 啥都没做出来，一塌糊涂，除了币价还在高位，也算是对持有者的交代了。
+zkSync 的手续费是一个优势，几乎是目前所有 L2 中最便宜的，但是 0.8 美元的手续费，也仅仅是便宜一点而已，注定无法推广。
+综合来看，L2 的手续费并没有很低廉，除非 L2 的手续费降到0.0几美元，甚至每天有一定的免费额度，否则，市场注定无法火爆。
+空投 Terra Land 即将给 Luna 质押者空投，快照还未开始。提醒：解除质押 luna 有21天等待期
+https://twitter.com/Terra_Land/status/1449427064742940673
+NFT NFT 继续火爆出圈。在我看来，NFT 最终还是要被社交巨头收割去，因为 NFT 是依赖流量的，明星流量最大，所以，明显发布的 NFT 明显有热度，有交易，有认购，可以说， 明星在哪里， NFT 的市场就在哪里。 拍卖行，博物馆，F1车队，足球俱乐部等等，都是 NFT 的潜在 B 端玩家， 而粉丝，本来就是要被收割的。
+从另外一个角度来看，原生于区块链，并在 opensea 上的大火头部团队，目前也比 opensea 平台更加强势，原因也是他们把持了流量，他们可以迁移到任何平台，例如 coinbase 等等。
+国内 NFT 似乎没有不合规的说法，最近也有大厂在试水，我觉得 weibo 应该会进来捞一把， weibo 上脑残粉丝最多，娱乐明星也最多，可以说是天作之合啊。
+FEI protocol 今天了解到一个稳定币项目，3月份做过一波 PR，如果说其他稳定币，例如 USDT，USDC，DAI 是依赖抵押物的话，那 FEI 就完全是空手套白狼了。当然，宣传肯定不能这么讲，要讲的非常高大上。
+我对稳定币的看法是，稳定币必须有使用场景，才能存活，没有使用场景的稳定币，即使币值稳定，也毫无用处。用处广泛，自然就有了共识，就稳定了。
+不过最近稳定币的风口似乎已经过去了。</content></entry><entry><title>10-19 DeFiHub -- sign-in with Ethereum</title><url>https://www.defihub.dev/post/2021/10/10-19-sign-in-with-ethereum/</url><categories><category>Defi</category><category>ETH</category></categories><tags><tag>ETH</tag><tag>ETH 2.0</tag><tag>EIP</tag><tag>NFT</tag></tags><content type="html"> EIP 4361 关于规范使用 Ethereum 登录，最近 ETH 社区提出了一个标准提案(eip): eip-4361, https://github.com/ethereum/EIPs/blob/9a9c5d0abdaf5ce5c5dd6dc88c6d8db1b130e95b/EIPS/eip-4361.md
 这个提案还没有通过，社区还正在讨论。
 官网： https://login.xyz Logo 如下:
 这个协议的内容和 EIP-712 有点类似，不过，是针对网站登录的。 随着NFT 走入大众的视线，作为全球 NFT 最大的销售平台， opensea 就是使用 Ethereum 登录。也许这不是 opensea 的首创，但绝对是使用 Ethereum 登录的最大网站，当然，各种 dapp 不包括在内。也正因为如此，这个 eip 中的例子就是 opensea
